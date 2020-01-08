@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :collections_museums
-  resources :art_collections
   resources :collections
   resources :museums
   resources :artists
