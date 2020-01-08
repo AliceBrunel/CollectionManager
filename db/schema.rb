@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_08_111217) do
+ActiveRecord::Schema.define(version: 2020_01_08_124840) do
 
   create_table "artists", force: :cascade do |t|
     t.string "name"
@@ -21,23 +21,11 @@ ActiveRecord::Schema.define(version: 2020_01_08_111217) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "arts_collections", force: :cascade do |t|
-    t.integer "artwork_id"
-    t.integer "collection_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+# Could not dump table "arts_collections" because of following StandardError
+#   Unknown type '' for column 'artwork_id'
 
-  create_table "artworks", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.integer "artist_id"
-    t.string "picture"
-    t.integer "price"
-    t.string "technic"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+# Could not dump table "artworks" because of following StandardError
+#   Unknown type 'belongs_to' for column 'artist'
 
   create_table "collections", force: :cascade do |t|
     t.string "name"
@@ -46,14 +34,8 @@ ActiveRecord::Schema.define(version: 2020_01_08_111217) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "collections_museums", force: :cascade do |t|
-    t.integer "collection_id"
-    t.integer "museum_id"
-    t.date "start_date"
-    t.date "end_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+# Could not dump table "collections_museums" because of following StandardError
+#   Unknown type '' for column 'collection_id'
 
   create_table "museums", force: :cascade do |t|
     t.string "name"

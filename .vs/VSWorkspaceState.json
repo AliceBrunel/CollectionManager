@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\config"
+    "\\app",
+    "\\app\\models",
+    "\\app\\views",
+    "\\app\\views\\application",
+    "\\db",
+    "\\db\\migrate"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\app\\models\\art_collection.rb",
   "PreviewInSolutionExplorer": false
 }
