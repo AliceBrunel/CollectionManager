@@ -1,0 +1,2 @@
+class CollectionsMuseumsController < ApplicationController
+end

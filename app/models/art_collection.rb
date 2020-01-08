@@ -1,0 +1,2 @@
+class ArtCollection < ApplicationRecord
+end

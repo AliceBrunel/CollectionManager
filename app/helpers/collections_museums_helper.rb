@@ -1,0 +1,2 @@
+module CollectionsMuseumsHelper
+end
