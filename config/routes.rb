@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'application#home'
+
   resources :collections
   resources :museums
   resources :artists
