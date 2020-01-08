@@ -1,0 +1,2 @@
+class CollectionMuseum < ApplicationRecord
+end
