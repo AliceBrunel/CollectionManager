@@ -4,7 +4,11 @@
   <%= label_tag(:name, "Email") %>
   <%= f.text_field :email %>
 
-  <%= f.collection_check_boxes :usertype_ids, Usertype.all, :id, :user_type %>
+  <% Role.all.each do |r| %>
+	  <p>
+		<label for="role_id_<%= r.id %>"><%= r.role_name %></label> <input type="checkbox" name="user[role_ids]" value="<%= r.id %>">
+	  </p>
+  <% end %>
 
   <%= label_tag(:name, "Password") %>
   <%= f.text_field :password_digest %>
