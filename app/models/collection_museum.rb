@@ -1,4 +1,4 @@
 class CollectionMuseum < ApplicationRecord
-  belongs_to :Collection
+  belongs_to :collection
   belongs_to :museum
 end

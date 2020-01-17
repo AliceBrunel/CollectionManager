@@ -4,7 +4,7 @@
   <%= label_tag(:name, "Email") %>
   <%= f.text_field :email %>
 
-
+  <%=f.collection_check_boxes :usertype_ids, Usertype.all, id:, :usertype %>
 
   <%= label_tag(:name, "Password") %>
   <%= f.text_field :password_digest %>
