@@ -6,7 +6,8 @@
 
   <% Role.all.each do |r| %>
 	  <p>
-		<label for="role_id_<%= r.id %>"><%= r.role_name %></label> <input type="checkbox" name="user[role_ids]" value="<%= r.id %>">
+		<label for="role_id_<%= r.id %>"><%= r.role_name %></label>
+		<input type="checkbox" name="user[role_ids][]" value="<%= r.id %>">
 	  </p>
   <% end %>
 

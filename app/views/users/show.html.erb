@@ -1,4 +1,8 @@
 <h1>View user</h1>
 <h2><%= @user.username %></h2>
 <p><%= @user.email %></p>
-<p><%= @user.roles %></p>
+<p>
+  <% @user.roles.each do |r| %>
+    <%= r.role_name %>
+    <% end %>
+  </p>
