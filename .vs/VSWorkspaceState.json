@@ -10,6 +10,6 @@
     "\\db",
     "\\db\\migrate"
   ],
-  "SelectedNode": "\\Gemfile",
+  "SelectedNode": "\\app\\views\\users\\_form.html.erb",
   "PreviewInSolutionExplorer": false
 }
